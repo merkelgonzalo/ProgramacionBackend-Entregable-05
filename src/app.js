@@ -7,20 +7,23 @@ import {Server} from 'socket.io';
 const PORT = '8080';
 
 const app = express();
-const httpServer = app.listen(PORT, ()=>{
+const server = app.listen(PORT, ()=>{
     console.log("Server running on port " + PORT);
 });
-const socketServer = new Server(httpServer);
+const socketServer = new Server(server);
 
-app.use(express.json());
-app.use(express.urlencoded({extended: true}));
-
-app.use('/api/products', productRouter);
-app.use('/api/carts', cartRouter);
+//app.use(express.json());
+//app.use(express.urlencoded({extended: true}));
+//app.use('/api/products', productRouter);
+//app.use('/api/carts', cartRouter);
 
 //NEW
 app.engine('handlebars', handlebars.engine());
 app.set('views', __dirname + '/views');
 app.set('view engine', 'handlebars');
 app.use(express.static(__dirname + '/public')); //Important for use js y css files on templates
-app.use('/', viewsRouter)
+app.use('/', viewsRouter);
+
+socketServer.on('connection', socket => {
+    console.log("New connected client")
+});
