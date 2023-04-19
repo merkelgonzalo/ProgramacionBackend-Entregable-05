@@ -1,0 +1,112 @@
+[
+	{
+		"title": "Auriculares",
+		"description": "Skullcandy",
+		"price": 6500,
+		"thumbnail": [],
+		"code": "SK10120",
+		"stock": 14,
+		"category": "Musica",
+		"status": true,
+		"id": 1
+	},
+	{
+		"title": "Notebook",
+		"description": "Dell G15",
+		"price": 300000,
+		"thumbnail": [],
+		"code": "abc124",
+		"stock": 71,
+		"category": "Windows Laptops",
+		"status": true,
+		"id": 2
+	},
+	{
+		"title": "Auriculares",
+		"description": "Skullcandy",
+		"price": 6500,
+		"thumbnail": [],
+		"code": "SK10120",
+		"stock": 14,
+		"category": "Musica",
+		"status": true,
+		"id": 4
+	},
+	{
+		"title": "Notebook",
+		"description": "Lenovo Thinkpad",
+		"price": 300000,
+		"thumbnail": [],
+		"code": "qwerabc124",
+		"stock": 71,
+		"category": "Windows Laptops",
+		"status": true,
+		"id": 5
+	},
+	{
+		"title": "Celular",
+		"description": "iPhone 11 pro",
+		"price": 400000,
+		"thumbnail": [],
+		"code": "abd12355555",
+		"stock": 43,
+		"category": "Apple Smartphones",
+		"status": true,
+		"id": 6
+	},
+	{
+		"title": "Celular",
+		"description": "Samsung Galaxy S22",
+		"price": 150000,
+		"thumbnail": [],
+		"code": "rrrabc123",
+		"stock": 0,
+		"category": "Android Smartphones",
+		"status": false,
+		"id": 7
+	},
+	{
+		"title": "Notebook",
+		"description": "McBook Pro",
+		"price": 300000,
+		"thumbnail": [],
+		"code": "abcasdf124",
+		"stock": 71,
+		"category": "Apple Laptops",
+		"status": true,
+		"id": 8
+	},
+	{
+		"title": "Celular",
+		"description": "iPhone 12",
+		"price": 400000,
+		"thumbnail": [],
+		"code": "abd123",
+		"stock": 0,
+		"category": "Apple Smartphones",
+		"status": false,
+		"id": 9
+	},
+	{
+		"title": "Celular",
+		"description": "iPhone 13",
+		"price": 400000,
+		"thumbnail": [],
+		"code": "abe123",
+		"stock": 43,
+		"category": "Apple Smartphones",
+		"status": true,
+		"id": 10
+	},
+	{
+		"title": "Lavarropa",
+		"description": "Drean",
+		"price": 300000,
+		"thumbnail": [],
+		"code": "gonzalito",
+		"stock": 71,
+		"category": "Electrodomesticos",
+		"status": true,
+		"id": 11
+	}
+]
