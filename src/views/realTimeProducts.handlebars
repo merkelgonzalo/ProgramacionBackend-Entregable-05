@@ -1,5 +1,6 @@
 <h1>Real Time Products</h1>
-{{!-- <form action="/api/products" method="post">
+<h2>Add Product</h2>
+<form id="productForm" method="post" name="products">
         <label>Title</label>
         <input name="title">
 
@@ -10,7 +11,7 @@
         <input name="price" type="number">
 
         <label>Code</label>
-        <input name="code" type="number">
+        <input name="code">
 
         <label>Stock</label>
         <input name="stock" type="number">
@@ -19,10 +20,12 @@
         <input name="category">
 
         <input type="submit">
-</form> --}}
+</form>
 
+<h2>Products</h2>
 <table>
     <tr> 
+        <th>ID</th>
         <th>Title</th>
         <th>Description</th> 
         <th>Price</th> 
@@ -31,12 +34,13 @@
         <th>Category</th> 
         <th>Status</th> 
     </tr>
-    <tbody>
+    <tbody id="productsNow">
         {{#each products}}
             <tr>
                 <td>{{this.id}}</td>
                 <td>{{this.title}}</td>
                 <td>{{this.description}}</td>
+                <td>{{this.price}}</td>
                 <td>{{this.code}}</td>
                 <td>{{this.stock}}</td>
                 <td>{{this.category}}</td>
@@ -45,10 +49,6 @@
         {{/each}}
     </tbody>
 </table>
-
-<div>
-    <p id="responseProducts"></p>
-</div>
 
 <script src="/socket.io/socket.io.js"></script>
 <script src="/js/home.js"></script>

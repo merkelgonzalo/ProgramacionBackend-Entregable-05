@@ -31,15 +31,10 @@ app.use('/', viewsRouter);
 io.on('connection', socket =>{
     console.log("New connected client")
 
-    socket.on('requestProducts', async () => {
-        const products = await productManager.getProducts();
-        io.emit('responseProducts', {products});
-    });
-
-    socket.on('newProduct', async newProduct => {
-        const product = await productManager.addProduct(newProduct);
-        const products = await productManager.getProducts();
-        io.emit('responseProducts', {products});
+    socket.on('newProduct', async (product) => {
+        await productManager.addProduct(product);
+  
+        io.emit("updateProducts", await productManager.getProducts());
     });
 
 });

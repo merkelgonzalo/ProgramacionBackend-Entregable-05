@@ -1,17 +1,46 @@
 const socket = io();
 
-socket.on('responseProducts', products => {
+const form = document.getElementById('productForm');
 
-  let productsBefore = document.getElementById('responseProducts');
-  let productsNow = "";
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
 
-  products.forEach(product => {
-    productsNow += `id: ${product.id}, title: ${product.title} <br>`;
+  const title = form.elements.title.value;
+  const description = form.elements.description.value;
+  const price = form.elements.price.value;
+  const code = form.elements.code.value;
+  const stock = form.elements.stock.value;
+  const category = form.elements.category.value;
+
+  console.log(event);
+  socket.emit('newProduct', {
+    title,
+    description,
+    price,
+    code,
+    stock,
+    category
   });
+})
 
-  console.log(productsNow);
-  productsBefore.innerHTML = productsNow;
+socket.on('updateProducts', (data) => {
+  const tbody = document.getElementById("productsNow");
 
+  const productsMap = data
+    .map((item) => {
+      return `<tr>
+      <th scope="row">${item.id}</th>
+      <td>${item.title}</td>
+      <td>${item.description}</td>
+      <td>${item.price}</td>
+      <td>${item.code}</td>
+      <td>${item.stock}</td>
+      <td>${item.category}</td>
+      <td>${item.status}</td>
+      </tr>`;
+    })
+    .join("");
+  tbody.innerHTML = productsMap;
 });
 
     

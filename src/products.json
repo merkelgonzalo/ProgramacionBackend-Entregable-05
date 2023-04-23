@@ -215,5 +215,45 @@
 		"category": "hhh",
 		"status": true,
 		"id": 21
+	},
+	{
+		"title": "gigi",
+		"description": "gigi",
+		"price": "1000000",
+		"code": "0303456",
+		"stock": "1",
+		"category": "femenino",
+		"status": true,
+		"id": 22
+	},
+	{
+		"title": "Agua",
+		"description": "Potable",
+		"price": "450",
+		"code": "agua133",
+		"stock": "84",
+		"category": "Bebidas",
+		"status": true,
+		"id": 23
+	},
+	{
+		"title": "a",
+		"description": "b",
+		"price": "143523",
+		"code": "asdf432",
+		"stock": "77",
+		"category": "asdfh",
+		"status": true,
+		"id": 24
+	},
+	{
+		"title": "titulo",
+		"description": "descripcion",
+		"price": "6575",
+		"code": "codigo123",
+		"stock": "66",
+		"category": "categoria",
+		"status": true,
+		"id": 25
 	}
 ]
