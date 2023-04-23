@@ -1,6 +1,6 @@
 <h1>Real Time Products</h1>
 <h2>Add Product</h2>
-<form id="productForm" method="post" name="products">
+<form id="addForm" method="post" name="products">
         <label>Title</label>
         <input name="title">
 
@@ -21,6 +21,16 @@
 
         <input type="submit">
 </form>
+
+<h2>Delete Product</h2>
+    <form id="deleteForm" method="post" name="products">
+      <div>
+        <label for="id"><b>ID</b></label>
+        <input type="number" name="id">
+      </div>
+      <input type="submit">
+    </form>
+</div>
 
 <h2>Products</h2>
 <table>

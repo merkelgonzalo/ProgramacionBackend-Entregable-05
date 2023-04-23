@@ -34,7 +34,13 @@ io.on('connection', socket =>{
     socket.on('newProduct', async (product) => {
         await productManager.addProduct(product);
   
-        io.emit("updateProducts", await productManager.getProducts());
+        io.emit('updateProducts', await productManager.getProducts());
     });
+
+    socket.on('deleteProduct', async (id) => {
+        await productManager.deleteProductById(id);
+  
+        io.emit('updateProducts', await productManager.getProducts());
+      });
 
 });

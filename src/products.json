@@ -11,17 +11,6 @@
 		"id": 1
 	},
 	{
-		"title": "Notebook",
-		"description": "Dell G15",
-		"price": 300000,
-		"thumbnail": [],
-		"code": "abc124",
-		"stock": 71,
-		"category": "Windows Laptops",
-		"status": true,
-		"id": 2
-	},
-	{
 		"title": "Auriculares",
 		"description": "Skullcandy",
 		"price": 6500,
@@ -42,17 +31,6 @@
 		"category": "Windows Laptops",
 		"status": true,
 		"id": 5
-	},
-	{
-		"title": "Celular",
-		"description": "iPhone 11 pro",
-		"price": 400000,
-		"thumbnail": [],
-		"code": "abd12355555",
-		"stock": 43,
-		"category": "Apple Smartphones",
-		"status": true,
-		"id": 6
 	},
 	{
 		"title": "Celular",
@@ -78,17 +56,6 @@
 	},
 	{
 		"title": "Celular",
-		"description": "iPhone 12",
-		"price": 400000,
-		"thumbnail": [],
-		"code": "abd123",
-		"stock": 0,
-		"category": "Apple Smartphones",
-		"status": false,
-		"id": 9
-	},
-	{
-		"title": "Celular",
 		"description": "iPhone 13",
 		"price": 400000,
 		"thumbnail": [],
@@ -99,161 +66,13 @@
 		"id": 10
 	},
 	{
-		"title": "Lavarropa",
-		"description": "Drean",
-		"price": 300000,
-		"thumbnail": [],
-		"code": "gonzalito",
-		"stock": 71,
+		"title": "Licuadora",
+		"description": "Smart Samsung",
+		"price": "70000",
+		"code": "lic123",
+		"stock": "5",
 		"category": "Electrodomesticos",
 		"status": true,
 		"id": 11
-	},
-	{
-		"title": "Camiseta",
-		"description": "1996 Arsenal Championship Cup",
-		"price": 30,
-		"thumbnail": [],
-		"code": "1996ARS",
-		"stock": 2,
-		"category": "Futbol",
-		"status": true,
-		"id": 12
-	},
-	{
-		"title": "Pantalon",
-		"description": "2002 Arsenal",
-		"price": 40,
-		"thumbnail": [],
-		"code": "2002ARS",
-		"stock": 2,
-		"category": "Futbol",
-		"status": true,
-		"id": 13
-	},
-	{
-		"title": "aaaaa",
-		"description": "ass fds",
-		"price": 40,
-		"thumbnail": [],
-		"code": "326547",
-		"stock": 2,
-		"category": "eeee",
-		"status": true,
-		"id": 14
-	},
-	{
-		"title": "bbbb",
-		"description": "bbbb fds",
-		"price": 40,
-		"thumbnail": [],
-		"code": "bbbtr",
-		"stock": 2,
-		"category": "eeee",
-		"status": true,
-		"id": 15
-	},
-	{
-		"title": "ccc",
-		"description": "bbbb fds",
-		"price": 40,
-		"thumbnail": [],
-		"code": "bbbtr",
-		"stock": 2,
-		"category": "eeee",
-		"status": true,
-		"id": 16
-	},
-	{
-		"title": "dddd",
-		"description": "bbbb fds",
-		"price": 40,
-		"thumbnail": [],
-		"code": "bbbtr",
-		"stock": 2,
-		"category": "eeee",
-		"status": true,
-		"id": 17
-	},
-	{
-		"title": "eeee",
-		"description": "bbbb fds",
-		"price": 40,
-		"thumbnail": [],
-		"code": "bbbtr",
-		"stock": 2,
-		"category": "eeee",
-		"status": true,
-		"id": 18
-	},
-	{
-		"title": "remera",
-		"description": "blanca",
-		"price": "1123",
-		"code": "8433478",
-		"stock": "5",
-		"category": "ropita",
-		"status": true,
-		"id": 19
-	},
-	{
-		"title": "remera",
-		"description": "blanca",
-		"price": "1123",
-		"code": "8433478",
-		"stock": "5",
-		"category": "ropita",
-		"status": true,
-		"id": 20
-	},
-	{
-		"title": "hhh",
-		"description": "hhh",
-		"price": "3",
-		"code": "4",
-		"stock": "3",
-		"category": "hhh",
-		"status": true,
-		"id": 21
-	},
-	{
-		"title": "gigi",
-		"description": "gigi",
-		"price": "1000000",
-		"code": "0303456",
-		"stock": "1",
-		"category": "femenino",
-		"status": true,
-		"id": 22
-	},
-	{
-		"title": "Agua",
-		"description": "Potable",
-		"price": "450",
-		"code": "agua133",
-		"stock": "84",
-		"category": "Bebidas",
-		"status": true,
-		"id": 23
-	},
-	{
-		"title": "a",
-		"description": "b",
-		"price": "143523",
-		"code": "asdf432",
-		"stock": "77",
-		"category": "asdfh",
-		"status": true,
-		"id": 24
-	},
-	{
-		"title": "titulo",
-		"description": "descripcion",
-		"price": "6575",
-		"code": "codigo123",
-		"stock": "66",
-		"category": "categoria",
-		"status": true,
-		"id": 25
 	}
 ]

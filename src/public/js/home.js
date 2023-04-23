@@ -1,18 +1,17 @@
 const socket = io();
 
-const form = document.getElementById('productForm');
+const addForm = document.getElementById("addForm");
 
-form.addEventListener('submit', (event) => {
+addForm.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  const title = form.elements.title.value;
-  const description = form.elements.description.value;
-  const price = form.elements.price.value;
-  const code = form.elements.code.value;
-  const stock = form.elements.stock.value;
-  const category = form.elements.category.value;
+  const title = addForm.elements.title.value;
+  const description = addForm.elements.description.value;
+  const price = addForm.elements.price.value;
+  const code = addForm.elements.code.value;
+  const stock = addForm.elements.stock.value;
+  const category = addForm.elements.category.value;
 
-  console.log(event);
   socket.emit('newProduct', {
     title,
     description,
@@ -21,7 +20,7 @@ form.addEventListener('submit', (event) => {
     stock,
     category
   });
-})
+});
 
 socket.on('updateProducts', (data) => {
   const tbody = document.getElementById("productsNow");
@@ -43,4 +42,13 @@ socket.on('updateProducts', (data) => {
   tbody.innerHTML = productsMap;
 });
 
+const deleteForm = document.getElementById("deleteForm");
+
+deleteForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const id = parseInt(deleteForm.elements.id.value);
+
+  socket.emit('deleteProduct', id);
+});
     
